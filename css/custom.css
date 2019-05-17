@@ -21,6 +21,7 @@ body {
 	background: radial-gradient(circle at 50% 10%, rgb(26, 38, 6), rgb(0,0,0));
 	box-shadow: inset 0px 0px 26px rgba(115, 157, 52, 0.5);
 	padding:10px;
+	cursor: pointer;
 }
 .circle-radio.active .circle {
 	box-shadow: none;
