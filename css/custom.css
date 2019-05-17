@@ -1,0 +1,170 @@
+html, body { height:100%; }
+body {
+	background-color: #000000;
+	background: radial-gradient(circle at 50% 100px, rgb(26, 38, 6), rgb(0, 0, 0));
+	font-family: 'Roboto', sans-serif;
+}
+.radio-container {
+	margin-top:100px;
+	position: relative;
+	background-image:url('../images/road.png');
+	background-position: center 100%;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	padding-bottom:100px;
+}
+.circle {
+	width:300px;
+	height:300px;
+	border-radius:50%;
+	background-color: rgba(26, 38, 6, 0.5);
+	background: radial-gradient(circle at 50% 10%, rgb(26, 38, 6), rgb(0,0,0));
+	box-shadow: inset 0px 0px 26px rgba(115, 157, 52, 0.5);
+	padding:10px;
+}
+.circle-radio.active .circle {
+	box-shadow: none;
+	box-shadow: none !important;
+}
+.circle > .circle-inner {
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	line-height: 280px;
+	color: rgba(115, 157, 52, 0.8);
+	font-size:150px;
+}
+.circle-radio.active .circle > .circle-inner {
+	background: radial-gradient(circle at 50% 100%, rgba(166, 216, 90, 0.4) 0%, rgba(115, 157, 52, 0.1) 50%);
+	color: rgb(197, 245, 122) !important;
+	text-shadow: 0 0 10px rgb(197, 245, 122);
+	box-shadow: 0px 0px 26px rgba(115, 157, 52, 0.5);
+}
+.circle-radio {
+	display: inline-block !important;
+}
+.circle-radio > input {
+	display:none;
+}
+.circle-reflect {
+	margin-top:10px;
+	width:300px;
+	height:150px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	background: radial-gradient(circle at 50% 0%, rgba(26, 38, 6, 0.6) 0%, rgba(26, 38, 6, 0.05) 30%, rgba(26, 38, 6, 0) 50%);
+}
+.circle-radio.active .circle-reflect {
+	background: radial-gradient(circle at 50% 0%, rgba(166, 216, 90, 0.25) 0%, rgba(166, 216, 90, 0.05) 30%, rgba(166, 216, 90, 0) 50%) !important;
+}
+.message, .message-option {
+	color: rgba(115, 157, 52, 0.8);
+	font-size: 36px;
+	
+}
+.message {
+	margin-bottom: 80px;
+}
+.message-option {
+	position: absolute;
+	bottom: 100px;
+	left:0;
+	width:100%;
+}
+
+@media (max-width: 767px) { 
+	.circle {
+		width:90px !important;
+		height:90px !important;
+		box-shadow: inset 0px 0px 10px rgba(115, 157, 52, 0.5);
+		padding:4px;
+	}
+	.circle > .circle-inner {
+		line-height: 82px !important;
+		font-size:44px;
+	}
+	.circle-radio.active .circle > .circle-inner {
+		box-shadow: 0px 0px 10px rgba(115, 157, 52, 0.5);
+	}
+	.circle-radio > input {
+		margin:20px 0 0 0 !important;
+	}
+	.circle-reflect {
+		margin-top: 4px !important;
+		width: 90px !important;
+		height: 40px !important;
+	}
+	.message, .message-option {
+		font-size: 20px;
+	}
+	.message {
+		margin-bottom: 40px !important;
+	}
+	.message-option {
+		bottom: 40px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.circle {
+		width:120px !important;
+		height:120px !important;
+		box-shadow: inset 0px 0px 14px rgba(115, 157, 52, 0.5);
+		padding:6px;
+	}
+	.circle > .circle-inner {
+		line-height: 108px !important;
+		font-size:60px;
+	}
+	.circle-radio.active .circle > .circle-inner {
+		box-shadow: 0px 0px 14px rgba(115, 157, 52, 0.5);
+	}
+	.circle-radio > input {
+		margin:30px 0 0 0 !important;
+	}
+	.circle-reflect {
+		margin-top: 6px !important;
+		width: 120px !important;
+		height: 60px !important;
+	}
+	.message, .message-option {
+		font-size: 26px;
+	}
+	.message {
+		margin-bottom: 40px !important;
+	}
+	.message-option {
+		bottom: 60px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+	.circle {
+		width:200px !important;
+		height:200px !important;
+		box-shadow: inset 0px 0px 18px rgba(115, 157, 52, 0.5);
+		padding:8px;
+	}
+	.circle > .circle-inner {
+		line-height: 184px !important;
+		font-size:100px;
+	}
+	.circle-radio.active .circle > .circle-inner {
+		box-shadow: 0px 0px 18px rgba(115, 157, 52, 0.5);
+	}
+	.circle-radio > input {
+		margin:40px 0 0 0 !important;
+	}
+	.circle-reflect {
+		margin-top: 8px !important;
+		width: 200px !important;
+		height: 100px !important;
+	}
+	.message, .message-option {
+		font-size: 30px;
+	}
+	.message {
+		margin-bottom: 60px !important;
+	}
+	.message-option {
+		bottom: 80px;
+	}
+}
