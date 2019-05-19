@@ -1,7 +1,8 @@
 html, body { height:100%; }
 body {
 	background-color: #000000;
-	background: radial-gradient(circle at 50% 100px, rgb(26, 38, 6), rgb(0, 0, 0));
+	background: radial-gradient(circle at 50% 100px, rgb(45, 61, 18), rgb(0, 0, 0));
+	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
 }
 .radio-container {
@@ -18,7 +19,7 @@ body {
 	height:300px;
 	border-radius:50%;
 	background-color: rgba(26, 38, 6, 0.5);
-	background: radial-gradient(circle at 50% 10%, rgb(26, 38, 6), rgb(0,0,0));
+	background: radial-gradient(circle at 50% 10%,rgb(45, 61, 18), rgb(0,0,0));
 	box-shadow: inset 0px 0px 26px rgba(115, 157, 52, 0.5);
 	padding:10px;
 	cursor: pointer;
@@ -53,7 +54,7 @@ body {
 	height:150px;
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
-	background: radial-gradient(circle at 50% 0%, rgba(26, 38, 6, 0.6) 0%, rgba(26, 38, 6, 0.05) 30%, rgba(26, 38, 6, 0) 50%);
+	background: radial-gradient(circle at 50% 0%, rgba(26, 38, 6, 1) 0%, rgba(26, 38, 6, 0.05) 30%, rgba(26, 38, 6, 0) 50%);
 }
 .circle-radio.active .circle-reflect {
 	background: radial-gradient(circle at 50% 0%, rgba(166, 216, 90, 0.25) 0%, rgba(166, 216, 90, 0.05) 30%, rgba(166, 216, 90, 0) 50%) !important;
